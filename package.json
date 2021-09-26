@@ -34,7 +34,7 @@
     "node": ">=0.10.3"
   },
   "homepage": "https://github.com/QuintionTang/generator-norm#readme",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "main": "app/index.js",
   "repository": {
     "type": "git",
