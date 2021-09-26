@@ -1,0 +1,48 @@
+{
+  "name": "generator-norm",
+  "author": {
+    "name": "Quintion Tang",
+    "email": "quintiontang@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/QuintionTang/generator-norm"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "~0.4.0",
+    "colors": "latest",
+    "express": "latest",
+    "faye-websocket": "0.4.x",
+    "open": "latest",
+    "send": "latest",
+    "stream-buffers": ">= 0.2.3",
+    "underscore": ">= 1.4.4",
+    "watchr": "2.3.x",
+    "command-exists": "^1.2.9",
+    "yeoman-generator": "^4.0.1",
+    "yosay": "^2.0.2"
+  },
+  "deprecated": false,
+  "description": "A Norm generator for Yeoman:一个WEB前端项目自动化规范构建工具，让繁琐的流程及规范交给程序来完成，让每个前端项目都有统一的规范。",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-release": "latest",
+    "mocha": "latest"
+  },
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "homepage": "https://github.com/QuintionTang/generator-norm#readme",
+  "license": "BSD-2-Clause",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuintionTang/generator-norm.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "1.0.1"
+}
