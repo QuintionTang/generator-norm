@@ -41,7 +41,7 @@
     "url": "git+https://github.com/QuintionTang/generator-norm.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec --timeout 3000"
   },
   "version": "1.0.2"
 }

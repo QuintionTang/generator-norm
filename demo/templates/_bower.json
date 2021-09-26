@@ -1,9 +1,0 @@
-{
-    "name": "<%= packageName %>",
-    "version": "<%= version %>",
-    "dependencies": {
-        "jquery": "latest",
-        "bootstrap":"latest",
-        "sass-bootstrap":"latest"
-    }
-}
