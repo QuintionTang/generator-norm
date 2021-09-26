@@ -7,6 +7,9 @@
   "bugs": {
     "url": "https://github.com/QuintionTang/generator-norm"
   },
+  "files": [
+    "app"
+  ],
   "bundleDependencies": false,
   "dependencies": {
     "command-exists": "^1.2.8",
@@ -31,7 +34,7 @@
   "deprecated": false,
   "description": "A Norm generator for Yeoman:一个WEB前端项目自动化规范构建工具，让繁琐的流程及规范交给程序来完成，让每个前端项目都有统一的规范。",
   "engines": {
-    "node": ">=0.10.3"
+    "node": ">=6"
   },
   "homepage": "https://github.com/QuintionTang/generator-norm#readme",
   "license": "MIT",
