@@ -1,4 +1,4 @@
-console.log('\'Allo \'Allo!');
+console.log("Web App Init");
 
 <%_ if (includeBootstrap) { -%>
 // Uncomment to enable Bootstrap tooltips
