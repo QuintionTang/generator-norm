@@ -34,7 +34,7 @@ module.exports = class extends Generator {
     if (!this.options['skip-welcome-message']) {
       this.log(
         yosay(
-          "Crayon，🖍 ! 使用HTML5 Boilerplate、jQuery和gulpfile来构建WEB应用程序"
+          "Crayon，🖍 ! 使用Bootstrap、jQuery和gulpfile来构建WEB应用程序"
         )
       );
     }
@@ -99,7 +99,7 @@ module.exports = class extends Generator {
     }
 
     let cssFile = `main.scss`;
-    copyTpl('_variables.scss', `app/styles/partials`, templateData);
+    copyTpl('_variables.scss', `app/styles/partials/_variables.scss`, templateData);
     copyTpl(cssFile, `app/styles/${cssFile}`, templateData);
   }
 

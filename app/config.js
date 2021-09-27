@@ -22,7 +22,7 @@ module.exports = {
         {
             type: "checkbox",
             name: "features",
-            message: "Which additional features would you like to include?",
+            message: "🖍 Which additional features would you like to include?",
             choices: [
                 {
                     name: "Sass",
@@ -49,7 +49,7 @@ module.exports = {
             when: (answers) => !answers.features.includes("includeBootstrap"),
         },
     ],
-    dirsToCreate: ["app/images", "app/fonts", "app/styles/partials"],
+    dirsToCreate: ["app/images", "app/fonts"],
     filesToCopy: [
         {
             input: "babelrc",

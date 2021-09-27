@@ -1,5 +1,8 @@
 {
+  "name": "qingzhou-console-ui",
   "private": true,
+  "version": "0.0.1",
+  "description": "一个webapp",
   "engines": {
     "node": ">=4"
   },
