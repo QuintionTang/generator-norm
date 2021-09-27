@@ -1,7 +1,7 @@
 {
-  "name": "qingzhou-console-ui",
+  "name": "<%= appname %>",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "一个webapp",
   "engines": {
     "node": ">=4"
