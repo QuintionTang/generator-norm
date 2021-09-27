@@ -1,5 +1,8 @@
 {
+  "name": "<%= appname %>",
   "private": true,
+  "version": "1.0.0",
+  "description": "一个webapp",
   "engines": {
     "node": ">=4"
   },
@@ -9,43 +12,43 @@
     <%_ } if (includeBootstrap || includeJQuery) { -%>
     "jquery": "^3.4.1"<% if (includeBootstrap || includeModernizr) { %>,<% } %>
     <%_ } if (includeModernizr) { -%>
-    "modernizr": "^3.7.1"<% if (includeBootstrap) { %>,<% } %>
+    "modernizr": "^3.11.8"<% if (includeBootstrap) { %>,<% } %>
     <%_ } if (includeBootstrap) { -%>
     "popper.js": "^1.15.0"
     <%_ } -%>
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.5",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.6",
+    "browser-sync": "^2.27.5",
     "cross-env": "^5.2.0",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.8",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.2.0",
-    "gulp-eslint": "^5.0.0",
+    "gulp-eslint": "^6.0.0",
     <%_ if (includeSass) { -%>
-    "gulp-filter": "^6.0.0",
+    "gulp-filter": "^7.0.0",
     <%_ } -%>
     "gulp-htmlmin": "^5.0.1",
-    "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^6.0.0",
-    "gulp-load-plugins": "^1.6.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-load-plugins": "^2.0.7",
     "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     <%_ if (includeSass) { -%>
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     <%_ } -%>
-    "gulp-size": "^3.0.0",
+    "gulp-size": "^4.0.1",
     "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^3.1.6",
+    "gulp-useref": "^5.0.0",
     <%_ if (includeModernizr) { -%>
     "mkdirp": "^0.5.1",
     <%_ } -%>
-    "mocha": "^6.1.4",
-    "yargs": "13.2.4"
+    "mocha": "^9.1.2",
+    "yargs": "17.2.1"
   },
   "scripts": {
     "serve:test": "cross-env NODE_ENV=test gulp serve",

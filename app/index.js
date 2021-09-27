@@ -34,7 +34,7 @@ module.exports = class extends Generator {
     if (!this.options['skip-welcome-message']) {
       this.log(
         yosay(
-          "'Allo 'allo! Out of the box I include HTML5 Boilerplate, jQuery, and a gulpfile to build your app."
+          "Crayon，🖍 ! 使用Bootstrap、jQuery和gulpfile来构建WEB应用程序"
         )
       );
     }
@@ -48,7 +48,6 @@ module.exports = class extends Generator {
       this.includeSass = hasFeature('includeSass');
       this.includeBootstrap = hasFeature('includeBootstrap');
       this.includeModernizr = hasFeature('includeModernizr');
-      this.includeAnalytics = hasFeature('includeAnalytics');
       this.includeJQuery = answers.includeJQuery;
     });
   }
@@ -64,7 +63,6 @@ module.exports = class extends Generator {
       testFramework: this.options['test-framework'],
       includeJQuery: this.includeJQuery,
       includeModernizr: this.includeModernizr,
-      includeAnalytics: this.includeAnalytics
     };
 
     const copy = (input, output) => {
@@ -79,6 +77,11 @@ module.exports = class extends Generator {
       );
     };
 
+    // Create extra directories
+    config.dirsToCreate.forEach(item => {
+      mkdirp(item);
+    });
+
     // Render Files
     config.filesToRender.forEach(file => {
       copyTpl(file.input, file.output, templateData);
@@ -89,16 +92,14 @@ module.exports = class extends Generator {
       copy(file.input, file.output);
     });
 
-    // Create extra directories
-    config.dirsToCreate.forEach(item => {
-      mkdirp(item);
-    });
+
 
     if (this.includeModernizr) {
       copy('modernizr.json', 'modernizr.json');
     }
 
-    let cssFile = `main.${this.includeSass ? 'scss' : 'css'}`;
+    let cssFile = `main.scss`;
+    copyTpl('_variables.scss', `app/styles/partials/_variables.scss`, templateData);
     copyTpl(cssFile, `app/styles/${cssFile}`, templateData);
   }
 

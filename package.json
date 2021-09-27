@@ -1,5 +1,6 @@
 {
   "name": "generator-norm",
+  "version": "1.0.9",
   "author": {
     "name": "Quintion Tang",
     "email": "quintiontang@gmail.com"
@@ -7,34 +8,37 @@
   "bugs": {
     "url": "https://github.com/QuintionTang/generator-norm"
   },
+  "files": [
+    "app"
+  ],
   "bundleDependencies": false,
   "dependencies": {
-    "command-exists": "^1.2.8",
+    "command-exists": "^1.2.9",
     "generator-jasmine": "^2.0.1",
     "generator-mocha": "^2.0.4",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^0.5.5",
     "yeoman-generator": "^4.0.1",
     "yosay": "^2.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^2.3.0",
-    "lint-staged": "^8.1.7",
-    "mocha": "^6.1.4",
-    "prettier": "^1.17.1",
+    "@babel/core": "^7.15.5",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "mocha": "^9.1.2",
+    "prettier": "^2.4.1",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.0.0"
   },
   "deprecated": false,
   "description": "A Norm generator for Yeoman:一个WEB前端项目自动化规范构建工具，让繁琐的流程及规范交给程序来完成，让每个前端项目都有统一的规范。",
   "engines": {
-    "node": ">=0.10.3"
+    "node": ">=6"
   },
   "homepage": "https://github.com/QuintionTang/generator-norm#readme",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "main": "app/index.js",
   "repository": {
     "type": "git",
@@ -42,6 +46,5 @@
   },
   "scripts": {
     "test": "mocha --reporter spec --timeout 3000"
-  },
-  "version": "1.0.2"
+  }
 }

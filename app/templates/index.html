@@ -1,0 +1,113 @@
+<!doctype html>
+<%_ if (includeModernizr) { -%>
+<html class="no-js" lang="">
+<%_ } else { -%>
+<html lang="">
+<%_ } -%>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%_ if (includeBootstrap) { %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%_ } else { -%>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%_ } -%>
+    <title><%= appname %></title>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <%_ if (includeBootstrap) { -%>
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- endbuild -->
+    <%_ } -%>
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <%_ if (includeModernizr) { -%>
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+    <%_ } -%>
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <%_ if (includeBootstrap) { -%>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills float-right">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">网站首页</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">关于我们</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">联系我们</a>
+          </li>
+        </ul>
+        <h3 class="text-muted"><%= appname %></h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1 class="display-3">Crayon 蜡笔 </h1>
+        <p class="lead">一个 WEB 前端项目自动化规范构建工具</p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>HTML5 Boilerplate</h4>
+          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+
+          <%_ if (includeSass) { -%>
+          <h4>Sass</h4>
+          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+          <%_ } -%>
+
+          <h4>Bootstrap</h4>
+          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+
+          <%_ if (includeModernizr) { -%>
+          <h4>Modernizr</h4>
+          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+          <%_ } -%>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Copyright © 2021-2023 <a href="https://www.devpoint.cn" target="_blank">devpoint.cn</a></p>
+      </div>
+    </div>
+    <%_ } else { -%>
+    <div class="hero-unit">
+      <h1>Crayon 蜡笔</h1>
+      <p>You now have</p>
+      <ul>
+        <li>HTML5 Boilerplate</li>
+        <%_ if (includeSass) { -%>
+        <li>Sass</li>
+        <%_ } if (includeModernizr) { -%>
+        <li>Modernizr</li>
+        <%_ } if (includeJQuery) { -%>
+        <li>jQuery</li>
+        <%_ } -%>
+      </ul>
+    </div>
+    <%_ } -%>
+    <!-- build:js scripts/vendor.js -->
+    <%_ if (includeJQuery || includeBootstrap) { -%>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <%_ } -%>
+    <%_ if (includeBootstrap) { -%>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <%_ } -%>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
